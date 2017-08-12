@@ -2,9 +2,9 @@
 
 # First Goal: Create a program that can tell you whether or not you can make a peanut butter and jelly sandwich
 
-peanut_butter = 5
-jelly = 0
-bread = 4
+# peanut_butter = 5
+# jelly = 0
+# bread = 4
 
 #if peanut_butter > 0 and jelly > 0 and bread >= 2:
 #	print "You can make a sandwich"
@@ -48,18 +48,18 @@ bread = 4
 
 # Fifth Goal: Create a program to tell you: if you have enough bread and peanut butter but no jelly, that you can make a peanut butter sandwich but you should take a hard, honest look at your life.  Wow, your program is kinda judgy.
 
-if peanut_butter == 1 and jelly == 1 and bread >= 2:
-	print "You can make a sandwich"
-elif bread%2 != 0:
-	print "You can make an open face sandwich"
-elif peanut_butter > 1 and jelly > 1 and bread >= 4:
-	print "You can make {0} sandwiches".format(bread / 2)
-elif jelly == 0:
-	print "You need jelly. You can make a peanut butter sandwich but you should take a hard, honest look at your life."
-elif peanut_butter == 0:
-	print "You need peanut butter"
-else:
-	print "You need bread"
+# if peanut_butter == 1 and jelly == 1 and bread >= 2:
+# 	print "You can make a sandwich"
+# elif bread%2 != 0:
+# 	print "You can make an open face sandwich"
+# elif peanut_butter > 1 and jelly > 1 and bread >= 4:
+# 	print "You can make {0} sandwiches".format(bread / 2)
+# elif jelly == 0:
+# 	print "You need jelly. You can make a peanut butter sandwich but you should take a hard, honest look at your life."
+# elif peanut_butter == 0:
+# 	print "You need peanut butter"
+# else:
+# 	print "You need bread"
 
 # What are the step-by-steps to recreate this?
 # First, you need variables to store your information.  Remember, variables are just containers for your information that you give a name.
@@ -99,3 +99,18 @@ else:
 
 # To satisfy the fifth goal:
 #		Continue from the fourth goal, but this time if you don't have enough ingredients, print a message that tells you which ones you're missing.
+
+bread = 10
+pb = 7
+jelly = 4
+
+while bread>=2:
+	if jelly>=1 and pb>=1:
+		print 'i have {0} bread, {1} peanut butter and {2} jelly'.format(bread, pb, jelly)
+	bread = bread -2
+	pb = pb -1
+	jelly = jelly -1
+
+
+
+
